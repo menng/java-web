@@ -8,7 +8,7 @@ import javax.servlet.annotation.WebListener;
 public class ListenerDemo implements ServletContextListener {
     @Override
     public void contextInitialized(ServletContextEvent sce) {
-        System.out.println("创建Application");
+        System.out.println("1 - Listener init");
     }
 
     @Override

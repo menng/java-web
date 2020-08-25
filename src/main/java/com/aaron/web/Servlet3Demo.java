@@ -11,6 +11,12 @@ import java.io.IOException;
 public class Servlet3Demo extends HttpServlet {
 
     @Override
+    public void init() throws ServletException {
+        System.out.println("3 - Servlet init 第一次被调用时触发");
+        super.init();
+    }
+
+    @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         resp.getWriter().write("Hello Servlet 3.0");
     }

@@ -1,4 +1,4 @@
-package com.aaron.web;
+package demo.web;
 
 import javax.servlet.*;
 import javax.servlet.annotation.WebFilter;
@@ -19,6 +19,6 @@ public class FilterDemo implements Filter {
 
     @Override
     public void destroy() {
-
+        System.out.println("Filter destroy");
     }
 }
